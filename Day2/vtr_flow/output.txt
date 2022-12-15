@@ -1,0 +1,5 @@
+vpr_status=success
+vpr_seconds=0
+rundir=/home/asheshpangma/VSD-FPGA-Fabric-Design-and-Architecture/Day2/vtr_flow
+hostname=fpga-workshop-01
+error=
