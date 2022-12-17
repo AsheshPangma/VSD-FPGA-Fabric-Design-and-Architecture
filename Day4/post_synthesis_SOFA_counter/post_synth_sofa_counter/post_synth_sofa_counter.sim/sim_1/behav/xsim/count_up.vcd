@@ -1,0 +1,4618 @@
+$date
+   Sat Dec 17 13:24:20 2022
+$end
+$version
+  2019.2
+$end
+$timescale
+  1ps
+$end
+$scope module upcounter_testbench $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$var reg 1 # enable $end
+$var wire 4 $ out [3:0] $end
+$scope module dut $end
+$var wire 1 % enable $end
+$var wire 1 & clk $end
+$var wire 1 ' reset $end
+$var wire 1 ( \out[0]  $end
+$var wire 1 ) \out[1]  $end
+$var wire 1 * \out[2]  $end
+$var wire 1 + \out[3]  $end
+$var wire 1 , enable_output_0_0 $end
+$var wire 1 - clk_output_0_0 $end
+$var wire 1 . reset_output_0_0 $end
+$var wire 1 / \latch_out[0]_output_0_0  $end
+$var wire 1 0 \latch_out[1]_output_0_0  $end
+$var wire 1 1 \latch_out[2]_output_0_0  $end
+$var wire 1 2 \latch_out[3]_output_0_0  $end
+$var wire 1 3 lut_n16_output_0_0 $end
+$var wire 1 4 lut_n20_output_0_0 $end
+$var wire 1 5 lut_n24_output_0_0 $end
+$var wire 1 6 lut_n28_output_0_0 $end
+$var wire 1 7 lut_$abc$159$new_n13__output_0_0 $end
+$var wire 1 8 lut_$abc$159$new_n17__output_0_0 $end
+$var wire 1 9 lut_$abc$159$new_n13__input_0_0 $end
+$var wire 1 : lut_$abc$159$new_n17__input_0_0 $end
+$var wire 1 ; lut_n16_input_0_1 $end
+$var wire 1 < lut_n20_input_0_3 $end
+$var wire 1 = \latch_out[3]_clock_0_0  $end
+$var wire 1 > \latch_out[2]_clock_0_0  $end
+$var wire 1 ? \latch_out[0]_clock_0_0  $end
+$var wire 1 @ \latch_out[1]_clock_0_0  $end
+$var wire 1 A lut_n28_input_0_1 $end
+$var wire 1 B lut_n24_input_0_0 $end
+$var wire 1 C lut_n16_input_0_0 $end
+$var wire 1 D lut_n20_input_0_0 $end
+$var wire 1 E lut_$abc$159$new_n13__input_0_3 $end
+$var wire 1 F lut_$abc$159$new_n17__input_0_2 $end
+$var wire 1 G lut_n16_input_0_2 $end
+$var wire 1 H lut_n20_input_0_2 $end
+$var wire 1 I \out[0]_input_0_0  $end
+$var wire 1 J lut_$abc$159$new_n13__input_0_1 $end
+$var wire 1 K lut_$abc$159$new_n17__input_0_1 $end
+$var wire 1 L lut_n20_input_0_1 $end
+$var wire 1 M \out[1]_input_0_0  $end
+$var wire 1 N lut_$abc$159$new_n13__input_0_2 $end
+$var wire 1 O lut_n24_input_0_2 $end
+$var wire 1 P \out[2]_input_0_0  $end
+$var wire 1 Q lut_n28_input_0_0 $end
+$var wire 1 R \out[3]_input_0_0  $end
+$var wire 1 S \latch_out[0]_input_0_0  $end
+$var wire 1 T \latch_out[1]_input_0_0  $end
+$var wire 1 U \latch_out[2]_input_0_0  $end
+$var wire 1 V \latch_out[3]_input_0_0  $end
+$var wire 1 W lut_n28_input_0_2 $end
+$var wire 1 X lut_n24_input_0_1 $end
+$scope module routing_segment_enable_output_0_0_to_lut_$abc$159$new_n13__input_0_0 $end
+$var wire 1 , datain $end
+$var wire 1 9 dataout $end
+$upscope $end
+$scope module routing_segment_enable_output_0_0_to_lut_$abc$159$new_n17__input_0_0 $end
+$var wire 1 , datain $end
+$var wire 1 : dataout $end
+$upscope $end
+$scope module routing_segment_enable_output_0_0_to_lut_n16_input_0_1 $end
+$var wire 1 , datain $end
+$var wire 1 ; dataout $end
+$upscope $end
+$scope module routing_segment_enable_output_0_0_to_lut_n20_input_0_3 $end
+$var wire 1 , datain $end
+$var wire 1 < dataout $end
+$upscope $end
+$scope module routing_segment_clk_output_0_0_to_latch_out[3]_clock_0_0 $end
+$var wire 1 - datain $end
+$var wire 1 = dataout $end
+$upscope $end
+$scope module routing_segment_clk_output_0_0_to_latch_out[2]_clock_0_0 $end
+$var wire 1 - datain $end
+$var wire 1 > dataout $end
+$upscope $end
+$scope module routing_segment_clk_output_0_0_to_latch_out[0]_clock_0_0 $end
+$var wire 1 - datain $end
+$var wire 1 ? dataout $end
+$upscope $end
+$scope module routing_segment_clk_output_0_0_to_latch_out[1]_clock_0_0 $end
+$var wire 1 - datain $end
+$var wire 1 @ dataout $end
+$upscope $end
+$scope module routing_segment_reset_output_0_0_to_lut_n28_input_0_1 $end
+$var wire 1 . datain $end
+$var wire 1 A dataout $end
+$upscope $end
+$scope module routing_segment_reset_output_0_0_to_lut_n24_input_0_0 $end
+$var wire 1 . datain $end
+$var wire 1 B dataout $end
+$upscope $end
+$scope module routing_segment_reset_output_0_0_to_lut_n16_input_0_0 $end
+$var wire 1 . datain $end
+$var wire 1 C dataout $end
+$upscope $end
+$scope module routing_segment_reset_output_0_0_to_lut_n20_input_0_0 $end
+$var wire 1 . datain $end
+$var wire 1 D dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[0]_output_0_0_to_lut_$abc$159$new_n13__input_0_3 $end
+$var wire 1 / datain $end
+$var wire 1 E dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[0]_output_0_0_to_lut_$abc$159$new_n17__input_0_2 $end
+$var wire 1 / datain $end
+$var wire 1 F dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[0]_output_0_0_to_lut_n16_input_0_2 $end
+$var wire 1 / datain $end
+$var wire 1 G dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[0]_output_0_0_to_lut_n20_input_0_2 $end
+$var wire 1 / datain $end
+$var wire 1 H dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[0]_output_0_0_to_out[0]_input_0_0 $end
+$var wire 1 / datain $end
+$var wire 1 I dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[1]_output_0_0_to_lut_$abc$159$new_n13__input_0_1 $end
+$var wire 1 0 datain $end
+$var wire 1 J dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[1]_output_0_0_to_lut_$abc$159$new_n17__input_0_1 $end
+$var wire 1 0 datain $end
+$var wire 1 K dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[1]_output_0_0_to_lut_n20_input_0_1 $end
+$var wire 1 0 datain $end
+$var wire 1 L dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[1]_output_0_0_to_out[1]_input_0_0 $end
+$var wire 1 0 datain $end
+$var wire 1 M dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[2]_output_0_0_to_lut_$abc$159$new_n13__input_0_2 $end
+$var wire 1 1 datain $end
+$var wire 1 N dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[2]_output_0_0_to_lut_n24_input_0_2 $end
+$var wire 1 1 datain $end
+$var wire 1 O dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[2]_output_0_0_to_out[2]_input_0_0 $end
+$var wire 1 1 datain $end
+$var wire 1 P dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[3]_output_0_0_to_lut_n28_input_0_0 $end
+$var wire 1 2 datain $end
+$var wire 1 Q dataout $end
+$upscope $end
+$scope module routing_segment_latch_out[3]_output_0_0_to_out[3]_input_0_0 $end
+$var wire 1 2 datain $end
+$var wire 1 R dataout $end
+$upscope $end
+$scope module routing_segment_lut_n16_output_0_0_to_latch_out[0]_input_0_0 $end
+$var wire 1 3 datain $end
+$var wire 1 S dataout $end
+$upscope $end
+$scope module routing_segment_lut_n20_output_0_0_to_latch_out[1]_input_0_0 $end
+$var wire 1 4 datain $end
+$var wire 1 T dataout $end
+$upscope $end
+$scope module routing_segment_lut_n24_output_0_0_to_latch_out[2]_input_0_0 $end
+$var wire 1 5 datain $end
+$var wire 1 U dataout $end
+$upscope $end
+$scope module routing_segment_lut_n28_output_0_0_to_latch_out[3]_input_0_0 $end
+$var wire 1 6 datain $end
+$var wire 1 V dataout $end
+$upscope $end
+$scope module routing_segment_lut_$abc$159$new_n13__output_0_0_to_lut_n28_input_0_2 $end
+$var wire 1 7 datain $end
+$var wire 1 W dataout $end
+$upscope $end
+$scope module routing_segment_lut_$abc$159$new_n17__output_0_0_to_lut_n24_input_0_1 $end
+$var wire 1 8 datain $end
+$var wire 1 X dataout $end
+$upscope $end
+$scope module lut_n28 $end
+$var wire 3 Y in [2:0] $end
+$var wire 1 6 out $end
+$var parameter 32 Z K [31:0] $end
+$var parameter 8 [ LUT_MASK [7:0] $end
+$upscope $end
+$scope module latch_out[3] $end
+$var wire 1 = clock $end
+$var wire 1 V D $end
+$var reg 1 \ Q $end
+$var parameter 0 ] INITIAL_VALUE $end
+$upscope $end
+$scope module lut_$abc$159$new_n13_ $end
+$var wire 4 ^ in [3:0] $end
+$var wire 1 7 out $end
+$var parameter 32 _ K [31:0] $end
+$var parameter 16 ` LUT_MASK [15:0] $end
+$upscope $end
+$scope module lut_n24 $end
+$var wire 3 a in [2:0] $end
+$var wire 1 5 out $end
+$var parameter 32 b K [31:0] $end
+$var parameter 8 c LUT_MASK [7:0] $end
+$upscope $end
+$scope module latch_out[2] $end
+$var wire 1 > clock $end
+$var wire 1 U D $end
+$var reg 1 d Q $end
+$var parameter 0 e INITIAL_VALUE $end
+$upscope $end
+$scope module lut_$abc$159$new_n17_ $end
+$var wire 3 f in [2:0] $end
+$var wire 1 8 out $end
+$var parameter 32 g K [31:0] $end
+$var parameter 8 h LUT_MASK [7:0] $end
+$upscope $end
+$scope module lut_n16 $end
+$var wire 3 i in [2:0] $end
+$var wire 1 3 out $end
+$var parameter 32 j K [31:0] $end
+$var parameter 8 k LUT_MASK [7:0] $end
+$upscope $end
+$scope module latch_out[0] $end
+$var wire 1 ? clock $end
+$var wire 1 S D $end
+$var reg 1 l Q $end
+$var parameter 0 m INITIAL_VALUE $end
+$upscope $end
+$scope module lut_n20 $end
+$var wire 4 n in [3:0] $end
+$var wire 1 4 out $end
+$var parameter 32 o K [31:0] $end
+$var parameter 16 p LUT_MASK [15:0] $end
+$upscope $end
+$scope module latch_out[1] $end
+$var wire 1 @ clock $end
+$var wire 1 T D $end
+$var reg 1 q Q $end
+$var parameter 0 r INITIAL_VALUE $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+b0 $
+0%
+0&
+1'
+0(
+0)
+0*
+0+
+0,
+0-
+1.
+0/
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+1A
+1B
+1C
+1D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+b10 Y
+b11 Z
+b10010 [
+0\
+0]
+b0 ^
+b100 _
+b1000000000000000 `
+b1 a
+b11 b
+b10100 c
+0d
+0e
+b0 f
+b11 g
+b10000000 h
+b1 i
+b11 j
+b10100 k
+0l
+0m
+b1 n
+b100 o
+b1010001000100 p
+0q
+0r
+$end
+#5000
+1!
+1&
+1-
+1=
+1>
+1?
+1@
+#10000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#15000
+1!
+1&
+1-
+1=
+1>
+1?
+1@
+#20000
+0!
+0"
+1#
+1%
+0&
+0'
+1,
+0-
+0.
+13
+04
+05
+06
+07
+08
+19
+1:
+1;
+1<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+1S
+b0 Y
+b1 ^
+b0 a
+b1 f
+b10 i
+b1000 n
+#25000
+1!
+b1 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#30000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#35000
+1!
+b10 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#40000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#45000
+1!
+b11 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#50000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#55000
+1!
+b100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#60000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#65000
+1!
+b101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#70000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#75000
+1!
+b110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#80000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#85000
+1!
+b111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+16
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+1V
+1W
+1X
+b100 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#90000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#95000
+1!
+b1000 $
+1&
+0(
+0)
+0*
+1+
+1-
+0/
+00
+01
+12
+13
+04
+05
+16
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+1Q
+1R
+1S
+0U
+1V
+0W
+0X
+b1 Y
+1\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#100000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#105000
+1!
+b1001 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#110000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#115000
+1!
+b1010 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#120000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#125000
+1!
+b1011 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#130000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#135000
+1!
+b1100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#140000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#145000
+1!
+b1101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#150000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#155000
+1!
+b1110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#160000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#165000
+1!
+b1111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+06
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+0V
+1W
+1X
+b101 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#170000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#175000
+1!
+b0 $
+1&
+0(
+0)
+0*
+0+
+1-
+0/
+00
+01
+02
+13
+04
+05
+06
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+0U
+0V
+0W
+0X
+b0 Y
+0\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#180000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#185000
+1!
+b1 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#190000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#195000
+1!
+b10 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#200000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#205000
+1!
+b11 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#210000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#215000
+1!
+b100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#220000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#225000
+1!
+b101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#230000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#235000
+1!
+b110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#240000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#245000
+1!
+b111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+16
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+1V
+1W
+1X
+b100 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#250000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#255000
+1!
+b1000 $
+1&
+0(
+0)
+0*
+1+
+1-
+0/
+00
+01
+12
+13
+04
+05
+16
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+1Q
+1R
+1S
+0U
+1V
+0W
+0X
+b1 Y
+1\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#260000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#265000
+1!
+b1001 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#270000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#275000
+1!
+b1010 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#280000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#285000
+1!
+b1011 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#290000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#295000
+1!
+b1100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#300000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#305000
+1!
+b1101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#310000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#315000
+1!
+b1110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#320000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#325000
+1!
+b1111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+06
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+0V
+1W
+1X
+b101 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#330000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#335000
+1!
+b0 $
+1&
+0(
+0)
+0*
+0+
+1-
+0/
+00
+01
+02
+13
+04
+05
+06
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+0U
+0V
+0W
+0X
+b0 Y
+0\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#340000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#345000
+1!
+b1 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#350000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#355000
+1!
+b10 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#360000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#365000
+1!
+b11 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#370000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#375000
+1!
+b100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#380000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#385000
+1!
+b101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#390000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#395000
+1!
+b110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#400000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#405000
+1!
+b111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+16
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+1V
+1W
+1X
+b100 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#410000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#415000
+1!
+b1000 $
+1&
+0(
+0)
+0*
+1+
+1-
+0/
+00
+01
+12
+13
+04
+05
+16
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+1Q
+1R
+1S
+0U
+1V
+0W
+0X
+b1 Y
+1\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#420000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#425000
+1!
+b1001 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#430000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#435000
+1!
+b1010 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#440000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#445000
+1!
+b1011 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#450000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#455000
+1!
+b1100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#460000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#465000
+1!
+b1101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#470000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#475000
+1!
+b1110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#480000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#485000
+1!
+b1111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+06
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+0V
+1W
+1X
+b101 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#490000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#495000
+1!
+b0 $
+1&
+0(
+0)
+0*
+0+
+1-
+0/
+00
+01
+02
+13
+04
+05
+06
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+0U
+0V
+0W
+0X
+b0 Y
+0\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#500000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#505000
+1!
+b1 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#510000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#515000
+1!
+b10 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#520000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#525000
+1!
+b11 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#530000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#535000
+1!
+b100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#540000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#545000
+1!
+b101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#550000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#555000
+1!
+b110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#560000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#565000
+1!
+b111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+16
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+1V
+1W
+1X
+b100 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#570000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#575000
+1!
+b1000 $
+1&
+0(
+0)
+0*
+1+
+1-
+0/
+00
+01
+12
+13
+04
+05
+16
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+1Q
+1R
+1S
+0U
+1V
+0W
+0X
+b1 Y
+1\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#580000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#585000
+1!
+b1001 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#590000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#595000
+1!
+b1010 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#600000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#605000
+1!
+b1011 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#610000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#615000
+1!
+b1100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#620000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#625000
+1!
+b1101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#630000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#635000
+1!
+b1110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#640000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#645000
+1!
+b1111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+06
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+0V
+1W
+1X
+b101 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#650000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#655000
+1!
+b0 $
+1&
+0(
+0)
+0*
+0+
+1-
+0/
+00
+01
+02
+13
+04
+05
+06
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+0U
+0V
+0W
+0X
+b0 Y
+0\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#660000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#665000
+1!
+b1 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#670000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#675000
+1!
+b10 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#680000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#685000
+1!
+b11 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#690000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#695000
+1!
+b100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#700000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#705000
+1!
+b101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#710000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#715000
+1!
+b110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#720000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#725000
+1!
+b111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+16
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+1V
+1W
+1X
+b100 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#730000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#735000
+1!
+b1000 $
+1&
+0(
+0)
+0*
+1+
+1-
+0/
+00
+01
+12
+13
+04
+05
+16
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+1Q
+1R
+1S
+0U
+1V
+0W
+0X
+b1 Y
+1\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#740000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#745000
+1!
+b1001 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#750000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#755000
+1!
+b1010 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#760000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#765000
+1!
+b1011 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#770000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#775000
+1!
+b1100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#780000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#785000
+1!
+b1101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#790000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#795000
+1!
+b1110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#800000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#805000
+1!
+b1111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+06
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+0V
+1W
+1X
+b101 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#810000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#815000
+1!
+b0 $
+1&
+0(
+0)
+0*
+0+
+1-
+0/
+00
+01
+02
+13
+04
+05
+06
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+0U
+0V
+0W
+0X
+b0 Y
+0\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#820000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#825000
+1!
+b1 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#830000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#835000
+1!
+b10 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#840000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#845000
+1!
+b11 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#850000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#855000
+1!
+b100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#860000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#865000
+1!
+b101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#870000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#875000
+1!
+b110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#880000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#885000
+1!
+b111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+16
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+1V
+1W
+1X
+b100 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#890000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#895000
+1!
+b1000 $
+1&
+0(
+0)
+0*
+1+
+1-
+0/
+00
+01
+12
+13
+04
+05
+16
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+1Q
+1R
+1S
+0U
+1V
+0W
+0X
+b1 Y
+1\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#900000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#905000
+1!
+b1001 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#910000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#915000
+1!
+b1010 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#920000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#925000
+1!
+b1011 $
+1&
+1(
+1-
+1/
+03
+04
+15
+07
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+1U
+1X
+b1011 ^
+b10 a
+b111 f
+b110 i
+1l
+b1110 n
+#930000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#935000
+1!
+b1100 $
+1&
+0(
+0)
+1*
+1-
+0/
+00
+11
+13
+04
+15
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+1O
+1P
+1S
+1U
+0X
+b101 ^
+b100 a
+1d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#940000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#945000
+1!
+b1101 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1101 ^
+b101 f
+b110 i
+1l
+b1100 n
+#950000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#955000
+1!
+b1110 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b111 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#960000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#965000
+1!
+b1111 $
+1&
+1(
+1-
+1/
+03
+04
+05
+06
+17
+18
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+0T
+0U
+0V
+1W
+1X
+b101 Y
+b1111 ^
+b110 a
+b111 f
+b110 i
+1l
+b1110 n
+#970000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#975000
+1!
+b0 $
+1&
+0(
+0)
+0*
+0+
+1-
+0/
+00
+01
+02
+13
+04
+05
+06
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+0U
+0V
+0W
+0X
+b0 Y
+0\
+b1 ^
+b0 a
+0d
+b1 f
+b10 i
+0l
+b1000 n
+0q
+#980000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#985000
+1!
+b1 $
+1&
+1(
+1-
+1/
+03
+14
+07
+08
+1=
+1>
+1?
+1@
+1E
+1F
+1G
+1H
+1I
+0S
+1T
+b1001 ^
+b101 f
+b110 i
+1l
+b1100 n
+#990000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
+#995000
+1!
+b10 $
+1&
+0(
+1)
+1-
+0/
+10
+13
+14
+07
+08
+1=
+1>
+1?
+1@
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+1L
+1M
+1S
+b11 ^
+b11 f
+b10 i
+0l
+b1010 n
+1q
+#1000000
+0!
+0&
+0-
+0=
+0>
+0?
+0@
