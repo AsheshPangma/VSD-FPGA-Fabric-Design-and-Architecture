@@ -8,7 +8,7 @@
 #--write_rr_graph example_rr_graph.xml  --route_chan_width ${OPENFPGA_VPR_ROUTE_CHAN_WIDTH}
 
 #Counter
-vpr ${VPR_ARCH_FILE} ${VPR_TESTBENCH_BLIF} --clock_modeling ideal --device ${OPENFPGA_VPR_DEVICE_LAYOUT} --route_chan_width ${OPENFPGA_VPR_ROUTE_CHAN_WIDTH} --absorb_buffer_luts off   --power --activity_file /home/nanditha/Documents/fpga/osfpga/SOFA/FPGA1212_QLSOFA_HD_PNR/FPGA1212_QLSOFA_HD_task/latest/vpr_arch/up_counter/MIN_ROUTE_CHAN_WIDTH/up_counter_ace_out.act   --tech_properties /home/nanditha/Documents/fpga/osfpga/vtr_github/vtr-verilog-to-routing/vtr_flow/tech/PTM_45nm/45nm.xml
+vpr ${VPR_ARCH_FILE} ${VPR_TESTBENCH_BLIF} --clock_modeling ideal --device ${OPENFPGA_VPR_DEVICE_LAYOUT} --route_chan_width ${OPENFPGA_VPR_ROUTE_CHAN_WIDTH} --absorb_buffer_luts off   --power --activity_file /home/asheshpangma/SOFA/FPGA1212_QLSOFA_HD_PNR/FPGA1212_QLSOFA_HD_task/latest/vpr_arch/up_counter/MIN_ROUTE_CHAN_WIDTH/up_counter_ace_out.act   --tech_properties /home/asheshpangma/vtr-verilog-to-routing/vtr_flow/tech/PTM_45nm/45nm.xml
 
 #RVMyth or large designs
 #vpr ${VPR_ARCH_FILE} ${VPR_TESTBENCH_BLIF} --clock_modeling ideal --device ${OPENFPGA_VPR_DEVICE_LAYOUT}  --absorb_buffer_luts off --sdc_file /home/nanditha/Documents/fpga/osfpga/SOFA/BENCHMARK/cache/cache.sdc    --gen_post_synthesis_netlist on
