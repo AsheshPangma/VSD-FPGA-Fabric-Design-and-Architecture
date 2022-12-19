@@ -10,13 +10,13 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.fpga_interconnect
 Compiling module xil_defaultlib.LUT_K(LUT_MASK=32'b1111111111111...
-Compiling module xil_defaultlib.LUT_K(LUT_MASK=32'b01)
 Compiling module xil_defaultlib.LUT_K(LUT_MASK=32'b0100010000000...
 Compiling module xil_defaultlib.DFF
 Compiling module xil_defaultlib.LUT_K(LUT_MASK=32'b0110100000000...
 Compiling module xil_defaultlib.LUT_K(LUT_MASK=32'b0110000000000...
 Compiling module xil_defaultlib.LUT_K(LUT_MASK=32'b011011000)
-Compiling module xil_defaultlib.adder(WIDTH=1'b1)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.LUT_K(K=4,LUT_MASK=16'b01)
 Compiling module xil_defaultlib.up_counter
 Compiling module xil_defaultlib.upcounter_testbench
 Compiling module xil_defaultlib.glbl
