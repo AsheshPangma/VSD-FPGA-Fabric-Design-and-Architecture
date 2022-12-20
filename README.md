@@ -182,8 +182,16 @@ After successful bitstream generation, we can open hardware manager from where w
 ## VIO Counter
 
 VIO stands for Virtual Input/Output. It is used to monitor and drive signals in FPGA in real time. We use ILA (Integrated Logic Analyzer) to observe output of the counter. 
-We first generated VIO IP. For this, we go to `IP catalogue` and search `vio`. Then, we opened VIO(Virtual Input/Output) and supplied the requirements as needed that is shown by the following screenshots.
-
+We first updated our counter verilog file to include only clock signal as shown below.
+```
+module counter_clk_div(clk);
+input clk;
+wire rst;
+reg div_clk;
+reg [25:0] delay_count;
+reg [3:0] counter_out;
+```
+Then, we generated VIO IP. For this, we go to `IP catalogue` and search `vio`. Then, we opened VIO(Virtual Input/Output) and supplied the requirements as needed that is shown by the following screenshots.
 
 ![](Day1/images/1_19_1_vio.png)
 
@@ -209,7 +217,7 @@ vio_0 vioname (
   .probe_out0(rst)            // output wire [0 : 0] probe_out0
 );
 ```
-
+Then we run the simulation, synthesis and implementation.
 
 
 
@@ -221,28 +229,43 @@ vio_0 vioname (
 
 # Day 2 - Introduction to OpenFPGA, VPR and VTR
 
-
 ## OpenFPGA
+
+OpenFPGA is the first open-source FPGA IP generator and can be used to quickly generate fabric for custom FPGA specific to our design. The main advantages of OpenFPGA are as follows:
+* Automated techniques
+* Reduces FPGA development cycle to few days
+* Open source design tools
+
+Custom FPGA are need for high performance result. However, we require a custom FPGA architecture and producing and prototyping a custom FPGA is costly and time-consuming. OpenFPGA provides a full set of EDA support customized FPGAs, including Verilog-to-bitstream generation and self-testing verification. OpenFPGA uses agile prototyping approaches and constantly updates tools for chip designers and researchers. Some other advantages of OpenFPGA are as follows:
+* Customise your own FPGA fabric using set of templates (>20 FPGA architectures-in xml file)
+* Generates Verilog netlists describing an FPGA fabric based on XML based description file: VPR's (Versatile Place and Route) architecture description language.
+* Allows you to write your own FPGA fabric (for a specific application) using OpenFPGA's architecture description language
+* Automatically generates verilog testbenches to validate the correctness of FPGA fabric
+* Bitstream generation support based on the XML-based description file
+
 
 ## VPR
 
 ![](Day2/images/2_1_earchXmlFile.png)
 
-![](Day2/images/2_1_earchXmlFile2.png)
-
-![](Day2/images/2_1_earchXmlFile3.png)
+EArch.xml | EArch.xml
+:-------------------------:|:-------------------------:
+![](Day2/images/2_1_earchXmlFile2.png) | ![](Day2/images/2_1_earchXmlFile3.png)
 
 ![](Day2/images/2_2_tsengBlif.png)
 
-![](Day2/images/2_2_tsengBlif2.png)
+tseng.blif | tseng.blif
+:-------------------------:|:-------------------------:
+![](Day2/images/2_2_tsengBlif2.png) | ![](Day2/images/2_2_tsengBlif3.png)
 
-![](Day2/images/2_2_tsengBlif3.png)
+The following command is used to run VPR.
 
 ![](Day2/images/2_3_vprCommand.png)
 
-![](Day2/images/2_4_vprRun.png)
-
-![](Day2/images/2_5_vprRunTerminal.png)
+A VPR window is obtained as shown below. 
+VPR window | Corresponding Terminal output
+:-------------------------:|:-------------------------:
+![](Day2/images/2_4_vprRun.png) | ![](Day2/images/2_5_vprRunTerminal.png)
 
 ![](Day2/images/2_6_vprRun.png)
 
