@@ -179,19 +179,39 @@ After successful bitstream generation, we can open hardware manager from where w
 
 
 
-## VIO
+## VIO Counter
+
+VIO stands for Virtual Input/Output. It is used to monitor and drive signals in FPGA in real time. We use ILA (Integrated Logic Analyzer) to observe output of the counter. 
+We first generated VIO IP. For this, we go to `IP catalogue` and search `vio`. Then, we opened VIO(Virtual Input/Output) and supplied the requirements as needed that is shown by the following screenshots.
+
 
 ![](Day1/images/1_19_1_vio.png)
 
-![](Day1/images/1_19_2_vio.png)
+General option | PROBE_IN ports
+:-------------------------:|:-------------------------:
+![](Day1/images/1_19_2_vio.png) | ![](Day1/images/1_19_3_vio.png)
 
-![](Day1/images/1_19_3_vio.png)
+PROBE_OUT ports | vio instance
+:-------------------------:|:-------------------------:
+![](Day1/images/1_19_4_vio.png) | ![](Day1/images/1_19_5_vio.png)
 
-![](Day1/images/1_19_4_vio.png)
-
-![](Day1/images/1_19_5_vio.png)
+The code snippet for VIO is added to our counter verilog file as shown by the following screenshot.
 
 ![](Day1/images/1_19_6_vio.png)
+
+Then the vio code snippet is updated as below.
+
+```
+vio_0 vioname (
+  .clk(clk),                  // input wire clk
+  .probe_in0(div_clk),        // input wire [0 : 0] probe_in0
+  .probe_in1(counter_out),    // input wire [3 : 0] probe_in1
+  .probe_out0(rst)            // output wire [0 : 0] probe_out0
+);
+```
+
+
+
 
 
 
