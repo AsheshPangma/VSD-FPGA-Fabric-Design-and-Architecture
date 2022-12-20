@@ -117,21 +117,34 @@ Elaborated design | Assigning I/O ports
 
 
 
+We then run synthesis. The below screenshot shows the output of synthesized design. Since no constraint were provided the timing report cannot be obtained.
 
-Constraints | Synthesis result
+No constraints | Synthesis result
 :-------------------------:|:-------------------------:
 ![](Day1/images/1_8_constraint_2.png) | ![](Day1/images/1_9_synthesis.png)
 
+We provided clock constraint of frequency 100MHz as shown by the screenshot below.
+
 ![](Day1/images/1_10_addClockConstraint.png)
+
+Then, we ran synthesis again. After the successful synthesis, I opened the timing report. We can see from the following snippet that the setup and hold time are both positive. This means that there is no setup and hold violation.
 
 ![](Day1/images/1_11_synthesisClockConstrained.png)
 
+After synthesis, we ran implementation. The following snippet shows the result of implementation with slight change in setup and hold time.
+
 ![](Day1/images/1_12_implementationTiming.png)
+
+After implemantation, the last step is to generate bit stream that can be done by pressing `Generate Bitstream` option in the window. After bit stream generation is completed, we get `write_bitstream Complete` at the upper right corner of the window as shown in the below snippet. 
+This generated bit stream is used to program our FPGA board.
 
 ![](Day1/images/1_12_implementationTiming2.png)
 
+We can view the utilization report, Timing report and power report after implementation. The below screenshot shows the utilization report.
+
 ![](Day1/images/1_13_implementationUtilisation.png)
 
+The below screenshot shows the timing report.
 ![](Day1/images/1_14_implementationPower.png)
 
 ![](Day1/images/1_15_bitstreamGenerate.png)
