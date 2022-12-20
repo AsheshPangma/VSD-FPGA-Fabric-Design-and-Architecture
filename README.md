@@ -147,15 +147,21 @@ We can view the utilization report, Timing report and power report after impleme
 The below screenshot shows the timing report.
 ![](Day1/images/1_14_implementationPower.png)
 
+Timing report | Source Clock Path
+:-------------------------:|:-------------------------:
+![](Day1/images/1_16_implementationTiming.png) | ![](Day1/images/1_16_1_sourceClockPath.png)
+
+Data Path | Destination Clock Path
+:-------------------------:|:-------------------------:
+![](Day1/images/1_16_2_DataPath.png) | ![](Day1/images/1_16_3_DestinationClockPath.png)
+
+After successful bitstream generation, we can open hardware manager from where we can select our target hardware that is to be programmed. Since, I had no physical FPGA board and no board connected to cloud, I could not actually program a FPGA. However, I learned the way to program actual FPGA board and will implement it in future.
+
 ![](Day1/images/1_15_bitstreamGenerate.png)
 
-![](Day1/images/1_16_1_sourceClockPath.png)
 
-![](Day1/images/1_16_2_DataPath.png)
 
-![](Day1/images/1_16_3_DestinationClockPath.png)
 
-![](Day1/images/1_16_implementationTiming.png)
 
 ![](Day1/images/1_17_1_DataPower.png)
 
