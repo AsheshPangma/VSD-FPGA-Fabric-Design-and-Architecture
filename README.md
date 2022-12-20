@@ -31,38 +31,96 @@ This repository provides all the information about 5-day workshop titled FPGA-Fa
 
 # Day 1 - Introduction To FPGA
 
-FPGA stands for Field Programmable Gate Array. This means FPGA can be programmed by a designer using Hardware Description Language that is similar to ASIC design. FPGA provides a lot of advantages when compared to ASIC. FPGA can be reconfigured, however ASIC must be redesigned and sent for refabrication process that is tedious and expensive. FPGA also facilitates faster design. When compared in terms of performance ASIC has better performance while consuming less power than FPGA.
+FPGA stands for Field Programmable Gate Array. This means FPGA can be programmed by a designer using Hardware Description Language that is similar to ASIC design. FPGA provides a lot of advantages when compared to ASIC. FPGA can be reconfigured, however ASIC must be redesigned and sent for refabrication process that is tedious and expensive. FPGA also facilitates faster design than ASIC. When compared in terms of performance ASIC has better performance while consuming less power than FPGA.
 
 ## FPGA Architecture
 
+FPGAjprimarily consists of CLBs (Configurable Logic Blocks), LUTs (Look up Tables), Programmable interconnects, I/O cells, Memory/Block RAM, Flip flops. CLB is where the combinational or sequential logics is implemented. It is comprise of LUTs, Carry and control logic and Flip-flops and/or latches.
 
+In this workshop, We also learned about Basys3 FPGA board. we were taught to program Basys3 Artix-7 FPGA board and observe the output of our design. 
 
 
 ## Counter in Xilinx Vivado
 
-Inverter Layout Cells |  Extraction from Inverter in Magic
+The verilog code for 4-bit counter module is shown below. We use this counter for exploring the Vivado tool and OpenFPGA. 
+```
+`timescale 1ns / 1ps
+// Description: 4 bit counter with source clock (100MHz) division.
+
+module counter_clk_div(clk,rst,counter_out);
+input clk,rst;
+reg div_clk;
+reg [25:0] delay_count;
+output reg [3:0] counter_out;
+
+//////////clock division block////////////////////
+always @(posedge clk)
+begin
+    if(rst)
+    begin
+        delay_count<=26'd0;
+        div_clk <= 1'b0;    //initialise div_clk
+    end
+    else
+//uncomment this line while running just the div clock counter for simulation purpose
+        if(delay_count==26'd212)
+//comment this line while running just the div clock counter for simulation purpose
+//if(delay_count==26'd32112212)
+        begin
+            delay_count<=26'd0; //reset upon reaching the max value
+            div_clk <= ~div_clk;  //generating a slow clock
+        end
+        else
+        begin
+            delay_count<=delay_count+1;
+        end
+    end
+end
+
+/////////////4 bit counter block///////////////////
+always @(posedge div_clk)
+begin
+    if(rst)
+    begin
+        counter_out<=4'b0000;
+    end
+    else
+    begin
+        counter_out<= counter_out+1;
+    end
+end
+
+endmodule 
+```
+
+
+We use the command `Vivado` to invoke the Vivado tool. The below screenshot shows Vivado tool being invoked. We then created a new project named project_counter in our desired location.
+Vivado starting up | Creating new project
 :-------------------------:|:-------------------------:
-![](images/day1/day1_9_inverterLayoutCells.png) |  ![](images/day1/day1_10_inverterLayoutExtraction.png) 
+![](Day1/images/1_1_vivadoStartUp.png) |  ![](Day1/images/1_2_newProject.png)
 
-![](Day1/images/1_1_vivadoStartUp.png)
 
-![](Day1/images/1_2_newProject.png)
+Board selection |  Adding design sources
+:-------------------------:|:-------------------------:
+![](Day1/images/1_3_boardSelection.png) | ![](Day1/images/1_4_addSources.png)
 
-![](Day1/images/1_3_boardSelection.png)
 
-![](Day1/images/1_4_addSources.png)
+Design and Simulation sources added |  Behavioral simulation of counter
+:-------------------------:|:-------------------------:
+![](Day1/images/1_5_addedSources.png) | ![](Day1/images/1_6_behavioralSimulation.png)
 
-![](Day1/images/1_5_addedSources.png)
 
-![](Day1/images/1_6_behavioralSimulation.png)
+Elaborated design | Assigning I/O ports
+:-------------------------:|:-------------------------:
+![](Day1/images/1_7_elaboratedDesign.png) | ![](Day1/images/1_8_constraint.png)
 
-![](Day1/images/1_7_elaboratedDesign.png)
 
-![](Day1/images/1_8_constraint.png)
 
-![](Day1/images/1_8_constraint_2.png)
 
-![](Day1/images/1_9_synthesis.png)
+
+Constraints | Synthesis result
+:-------------------------:|:-------------------------:
+![](Day1/images/1_8_constraint_2.png) | ![](Day1/images/1_9_synthesis.png)
 
 ![](Day1/images/1_10_addClockConstraint.png)
 
