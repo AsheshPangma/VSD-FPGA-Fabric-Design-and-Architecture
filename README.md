@@ -135,10 +135,7 @@ After synthesis, we ran implementation. The following snippet shows the result o
 
 ![](Day1/images/1_12_implementationTiming.png)
 
-After implemantation, the last step is to generate bit stream that can be done by pressing `Generate Bitstream` option in the window. After bit stream generation is completed, we get `write_bitstream Complete` at the upper right corner of the window as shown in the below snippet. 
-This generated bit stream is used to program our FPGA board.
 
-![](Day1/images/1_12_implementationTiming2.png)
 
 We can view the utilization report, Timing report and power report after implementation. The below screenshot shows the utilization report.
 
@@ -155,6 +152,21 @@ Data Path | Destination Clock Path
 :-------------------------:|:-------------------------:
 ![](Day1/images/1_16_2_DataPath.png) | ![](Day1/images/1_16_3_DestinationClockPath.png)
 
+The below screenshot shows power report.
+
+![](Day1/images/1_17_implementationPower.png)
+
+![](Day1/images/1_17_1_DataPower.png)
+
+![](Day1/images/1_17_2_logicPower.png)
+
+![](Day1/images/1_17_3_ioPower.png)
+
+After implemantation, the last step is to generate bit stream that can be done by pressing `Generate Bitstream` option in the window. After bit stream generation is completed, we get `write_bitstream Complete` at the upper right corner of the window as shown in the below snippet. 
+This generated bit stream is used to program our FPGA board.
+
+![](Day1/images/1_12_implementationTiming2.png)
+
 After successful bitstream generation, we can open hardware manager from where we can select our target hardware that is to be programmed. Since, I had no physical FPGA board and no board connected to cloud, I could not actually program a FPGA. However, I learned the way to program actual FPGA board and will implement it in future.
 
 ![](Day1/images/1_15_bitstreamGenerate.png)
@@ -163,17 +175,9 @@ After successful bitstream generation, we can open hardware manager from where w
 
 
 
-![](Day1/images/1_17_1_DataPower.png)
 
-![](Day1/images/1_17_2_logicPower.png)
 
-![](Day1/images/1_17_3_ioPower.png)
 
-![](Day1/images/1_17_implementationPower.png)
-
-![](Day1/images/1_18_1_summaryResourceUtilisation.png)
-
-![](Day1/images/1_18_reportUtilisation.png)
 
 ## VIO
 
