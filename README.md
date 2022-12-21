@@ -313,6 +313,9 @@ VPR window | Corresponding Terminal output
 
 ![](Day2/images/2_16_timingReport.png)
 
+
+## VTR
+
 ![](Day2/images/2_17_vtrRun.png)
 
 ![](Day2/images/2_17_vtrRun2.png)
@@ -379,7 +382,7 @@ VPR window | Corresponding Terminal output
 
 
 
-## VTR
+
 
 
 
@@ -426,12 +429,14 @@ VPR window | Corresponding Terminal output
 
 ![](Day3/images/3_10_utilization.png)
 
+## RVMyth Vivado synthesis-to-bitstream
+
 ![](Day3/images/3_11_bitstream.png)
 
 
 
 
-## RVMyth Vivado synthesis-to-bitstream
+
 
 
 
@@ -461,6 +466,8 @@ VPR window | Corresponding Terminal output
 
 ![](Day4/images/4_7_vprStdout2.png)
 
+## SOFA counter timing
+
 ![](Day4/images/4_8_counterTiming.png)
 
 ![](Day4/images/4_8_counterTiming2.png)
@@ -470,6 +477,8 @@ VPR window | Corresponding Terminal output
 ![](Day4/images/4_10_counterTiming_makeRun.png)
 
 ![](Day4/images/4_11_counterTimingReport.png)
+
+## SOFA counter post implementation netlist
 
 ![](Day4/images/4_12_counterPostSynthResult.png)
 
@@ -497,6 +506,7 @@ VPR window | Corresponding Terminal output
 
 ![](Day4/images/4_19_upCounterAce.png)
 
+## SOFA counter power
 
 ![](Day4/images/4_20_upCounterPower.png)
 
@@ -506,12 +516,12 @@ VPR window | Corresponding Terminal output
 
 
 
-## SOFA counter timing
 
 
-## SOFA counter post implementation netlist
 
-## SOFA counter power
+
+
+
 
 
 
@@ -546,7 +556,11 @@ VPR window | Corresponding Terminal output
 
 ![](Day5/images/5_9_rvmythMakeRun.png)
 
+## SOFA RVMyth timing and area
+
 ![](Day5/images/5_10_rvmythTiming.png)
+
+## RVMyth post implementation netlist
 
 ![](Day5/images/5_11_rvmythPostSynth.png)
 
@@ -555,6 +569,8 @@ VPR window | Corresponding Terminal output
 ![](Day5/images/5_13_rvmythPostSynthesisVivado.png)
 
 ![](Day5/images/5_13_rvmythPostSynthesisVivado2.png)
+
+## SOFA RVMyth Vivado simulation
 
 ![](Day5/images/5_14_rvmythSchematci.png)
 
@@ -570,6 +586,8 @@ VPR window | Corresponding Terminal output
 
 ![](Day5/images/5_17_rvmythTiming.png)
 
+## SOFA counter power
+
 ![](Day5/images/5_18_rvmythPower.png)
 
 ![](Day5/images/5_18_rvmythPower2.png)
@@ -580,15 +598,15 @@ VPR window | Corresponding Terminal output
 
 
 
-## SOFA RVMyth timing and area
 
 
-## RVMyth post implementation netlist
 
 
-## SOFA RVMyth Vivado simulation
 
-## SOFA counter power
+
+
+
+
 
 # References
 
